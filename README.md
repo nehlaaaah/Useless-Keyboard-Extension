@@ -8,7 +8,7 @@
 
 
 ### Team Members
-- Team Lead: [Fathima Nehla PS] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
+- Team Lead:[Fathima Nehla PS] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
 - Member 2: [Jefin Joseph] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
 - Member 3: [Fenin Sajan] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
 
