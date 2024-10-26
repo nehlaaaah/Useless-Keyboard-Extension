@@ -1,49 +1,49 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# [Useless Keyboard] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [404 Not Found]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Fathima Nehla PS] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
+- Member 2: [Jefin Joseph] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
+- Member 3: [Fenin Sajan] - [SCMS SCHOOL OF ENGINEERING AND TECHNOLOGY]
 
 ### Project Description
-[2-3 lines about what your project does]
-x
+[A website that displays an on-screen keyboard, which can only be operated by typing on an external keyboard. It completely ignores mouse clicks, making it a totally impractical tool for on-screen typing.]
+
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Have you ever thought typing into a website with your keyboard was too simple? Or that it was too easy to click on an on-screen keyboard? By enabling users to type using an on-screen keyboard without mouse functionality, this extension addresses the "problem" of efficiency.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[Presenting the website "Useless Keyboard"! It only displays what you type on an on-screen keyboard, but it allows you to type by... typing on your real keyboard. Additionally, using a mouse to click the on-screen keys does nothing!]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+-Languages used: JavaScript, HTML, CSS
+-Frameworks used: None
+-Libraries used: None
+-Tools used: Chrome Extension API, Visual Studio Code
+
+
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+ Clone the repository or download the source code.
+
+
 
 # Run
-[commands]
+run and debug the code
 
 ### Project Documentation
-For Software:
+For Software:This extension was created for maximum impracticality. You can extend its capabilities by adding more features that ensure it remains as inconvenient as possible
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
@@ -59,14 +59,6 @@ For Software:
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 # Build Photos
 ![Components](Add photo of your components here)
@@ -87,15 +79,16 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Fathima Nehla PS]: [coding]
+- [Fenin sajan]: [Front end designing]
+- [Jefin joseph]: [git hub updations and all]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProject--24-24?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
+
 
 
 
