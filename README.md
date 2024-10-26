@@ -79,9 +79,9 @@ For Software:This extension was created for maximum impracticality. You can exte
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Fathima Nehla PS]: [coding]
-- [Fenin sajan]: [Front end designing]
-- [Jefin joseph]: [git hub updations and all]
+- Fathima Nehla PS: [coding]
+- Fenin sajan: [Front end designing]
+- Jefin joseph: [git hub updations and all]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
