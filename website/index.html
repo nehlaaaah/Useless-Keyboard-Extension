@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>On-Screen Keyboard Extension</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://thegadgetflow.com/wp-content/uploads/2013/07/Scrabble-Magnetic-Refrigerator-Tiles-3.jpg'); /* Set your background image here */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            color: white; /* White text */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .typing-area {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .on-screen-keyboard {
+            background: #e0e0e0; /* Optional background for the keyboard area */
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .keyboard-row {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+            gap: 5px;
+        }
+
+        .key {
+            background: #f5f5dc; /* Cream color for keys */
+            color: black; /* Text color on keys */
+            border: 1px solid #ccc; /* Light border for keys */
+            border-radius: 4px;
+            padding: 10px 15px;
+            min-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.1s; /* Add transition for transform */
+        }
+
+        .key.popped {
+            transform: translateY(-5px); /* Move the key up */
+        }
+
+        .key.wide {
+            min-width: 80px;
+        }
+
+        .install-button {
+            background: #f5f5dc; /* Cream color for button */
+            color: black; /* Text color */
+            border: 1px solid #ccc; /* Light border for button */
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+
+        .install-button:hover {
+            background: #e8e8b5; /* Slightly darker cream on hover */
+        }
+
+        .note {
+            color: #ccc; /* Light gray text */
+            font-size: 14px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>On-Screen Keyboard Extension</h1>
+        <p>A simple keyboard extension for your browser</p>
+
+        <div class="typing-area">
+            <textarea id="user-input" placeholder="Click here to type..."></textarea>
+        </div>
+
+        <div class="on-screen-keyboard">
+            <div class="keyboard-row">
+                <div class="key">1</div>
+                <div class="key">2</div>
+                <div class="key">3</div>
+                <div class="key">4</div>
+                <div class="key">5</div>
+                <div class="key">6</div>
+                <div class="key">7</div>
+                <div class="key">8</div>
+                <div class="key">9</div>
+                <div class="key">0</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key">Q</div>
+                <div class="key">W</div>
+                <div class="key">E</div>
+                <div class="key">R</div>
+                <div class="key">T</div>
+                <div class="key">Y</div>
+                <div class="key">U</div>
+                <div class="key">I</div>
+                <div class="key">O</div>
+                <div class="key">P</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key">A</div>
+                <div class="key">S</div>
+                <div class="key">D</div>
+                <div class="key">F</div>
+                <div class="key">G</div>
+                <div class="key">H</div>
+                <div class="key">J</div>
+                <div class="key">K</div>
+                <div class="key">L</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key">Z</div>
+                <div class="key">X</div>
+                <div class="key">C</div>
+                <div class="key">V</div>
+                <div class="key">B</div>
+                <div class="key">N</div>
+                <div class="key">M</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key wide">Space</div>
+                <div class="key wide">Backspace</div>
+            </div>
+        </div>
+
+        <button class="install-button">Add to Extensions</button>
+        
+        <p class="note">Note: This extension requires an external keyboard to function.</p>
+    </div>
+
+    <script>
+        let userInput = document.getElementById('user-input');
+        let isTyping = false;
+        let startTime;
+
+        const textToType = a[100];
+
+        userInput.addEventListener('focus', startTest);
+
+        function startTest() {
+            userInput.value = '';
+            userInput.disabled = false;
+            userInput.focus();
+            isTyping = true;
+            startTime = new Date();
+
+            userInput.addEventListener('input', checkInput);
+        }
+
+        function checkInput() {
+            if (!isTyping) return;
+
+            const currentText = userInput.value;
+            const expectedText = textToType.substring(0, currentText.length);
+
+            if (currentText === expectedText) {
+                if (currentText.length === textToType.length) {
+                    endTest();
+                }
+            } else {
+                userInput.value = expectedText;
+            }
+        }
+
+        function endTest() {
+            isTyping = false;
+            const endTime = new Date();
+            const timeTaken = (endTime - startTime) / 1000;
+            alert(`Test finished! Time taken: ${timeTaken.toFixed(2)} seconds.`);
+        }
+
+        // Handle extension installation
+        document.querySelector('.install-button').addEventListener('click', () => {
+            alert('Extension installation would be triggered here');
+        });
+
+        // Add click event listeners to all keys
+        const keys = document.querySelectorAll('.key');
+
+        keys.forEach(key => {
+            key.addEventListener('mousedown', () => {
+                key.classList.add('popped'); // Add the popped class to trigger the animation
+            });
+
+            key.addEventListener('transitionend', () => {
+                key.classList.remove('popped'); // Remove the popped class after the animation ends
+            });
+
+            key.addEventListener('click', () => {
+                const keyValue = key.textContent === 'Space' ? ' ' : key.textContent;
+                userInput.value += keyValue; // Append key value to textarea
+
+                // Trigger the pop-up effect
+                key.classList.add('popped');
+                setTimeout(() => {
+                    key.classList.remove('popped');
+                }, 100); // Duration of the pop-up effect
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://thegadgetflow.com/wp-content/uploads/2013/07/Scrabble-Magnetic-Refrigerator-Tiles-3.jpg'); /* Set your background image here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    color: white; /* White text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for readability */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.typing-area {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.on-screen-keyboard {
+    background: #e0e0e0; /* Optional background for the keyboard area */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    gap: 5px;
+}
+
+.key {
+    background: #f5f5dc; /* Cream color for keys */
+    color: black; /* Text color on keys */
+    border: 1px solid #ccc; /* Light border for keys */
+    border-radius: 4px;
+    padding: 10px 15px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.1s ease; /* Add transition for the transform property */
+}
+
+.key.clicked {
+    transform: translateY(-5px); /* Move the key up when clicked */
+}
+
+
+.key.wide {
+    min-width: 80px;
+}
+
+.install-button {
+    background: #f5f5dc; /* Cream color for button */
+    color: black; /* Text color */
+    border: 1px solid #ccc; /* Light border for button */
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background 0.3s;
+}
+
+.install-button:hover {
+    background: #e8e8b5; /* Slightly darker cream on hover */
+}
+
+.note {
+    color: #ccc; /* Light gray text */
+    font-size: 14px;
+    margin: 20px 0;
+}
+
