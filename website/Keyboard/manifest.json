@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Useless Keyboard",
+  "version": "1.0",
+  "description": "An on-screen keyboard that only works with an external keyboard",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
